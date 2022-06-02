@@ -36,4 +36,16 @@ this circuit was tested in the main.cpp file using a SystemC test bench which is
 the VCD output waveform for 7 put on the NewPageBus is as follows:
 ![image](https://user-images.githubusercontent.com/65303603/171610510-1c2cf3b9-8a46-4551-a031-50eee0689f3a.png)
 
-There's also a difrent design and Implimentation of this LRU in this projevt
+
+**There's also a difrent design and Implimentation of this LRU, in which updating
+is completed in one clock cycle. It uses shift registers with enable input and comparators. Each
+register stores the page number and has a fixed tag which is from 0 to 15 (0 is MRU and 15 is
+LRU). This circuit has two inputs named NewPageBus and completed and no output.
+
+![image](https://user-images.githubusercontent.com/65303603/171610939-237a565c-ca73-41ef-bca4-4bd32f62be3b.png)
+![image](https://user-images.githubusercontent.com/65303603/171610981-eb8f9f44-3ef5-4cec-a188-b2cf82e71bcc.png)
+
+The functional SystemC description of this LRU Updater is written and can be found in the main code directory. The result of it's simulation is as follows:
+![image](https://user-images.githubusercontent.com/65303603/171611400-cc52d79f-4b62-48de-b649-19ad67549dbc.png)
+
+
