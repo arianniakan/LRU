@@ -29,8 +29,8 @@ The DataPath and Controller of this circuit are as follows:
 ![photo1653568208](https://user-images.githubusercontent.com/65303603/171609683-a46d4d27-24e5-4bdf-ba06-a9f7b52d7e20.jpeg)
 ![image](https://user-images.githubusercontent.com/65303603/171609714-a1df9ae3-fcd3-40da-95e3-1bc46d8700a8.png)
 
-They are Implimented and tested using SystemC, which can be seen in the main codes directory as LRU_DP ans LRU_CP
-the modules used in them, like the incrementer and subtractor are also Implimented and have their own respective .h files in the main directory.
+They are Implimented and tested using SystemC, which can be seen in the LRU_RTLSystemC directory as LRU_DP ans LRU_CP
+the modules used in them, like the incrementer and subtractor are also Implimented and have their own respective .h files in the LRU_RTLSystemC directory.
 
 this circuit was tested in the main.cpp file using a SystemC test bench which is found in the main Directory as LRU_TB 
 the VCD output waveform for 7 put on the NewPageBus is as follows:
@@ -45,7 +45,7 @@ LRU). This circuit has two inputs named NewPageBus and completed and no output.
 ![image](https://user-images.githubusercontent.com/65303603/171610939-237a565c-ca73-41ef-bca4-4bd32f62be3b.png)
 ![image](https://user-images.githubusercontent.com/65303603/171610981-eb8f9f44-3ef5-4cec-a188-b2cf82e71bcc.png)
 
-The functional SystemC description of this LRU Updater is written and can be found in the main code directory. The result of it's simulation is as follows:
+The functional SystemC description of this LRU Updater is written and can be found in LRU_BusFunctionalSystemC directory. The result of it's simulation is as follows:
 ![image](https://user-images.githubusercontent.com/65303603/171611400-cc52d79f-4b62-48de-b649-19ad67549dbc.png)
 
 
